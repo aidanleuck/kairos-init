@@ -14,8 +14,8 @@ define URL_TEMPLATE
 https://github.com/kairos-io/$1/releases/download/$2/$1-$2-Linux-$(ARCH)$3.tar.gz
 endef
 
-kairos-agent_URL := $(call URL_TEMPLATE,kairos-agent,$(AGENT_VERSION))
-immucore_URL := $(call URL_TEMPLATE,immucore,$(IMMUCORE_VERSION))
+kairos-agent_URL := https://artifactory.metro.ad.selinc.com:443/artifactory/ffdo-templates-generic-dev/kairos-agent.tar.gz
+immucore_URL := https://artifactory.metro.ad.selinc.com:443/artifactory/ffdo-templates-generic-dev/immucore-linux.tar.gz
 kcrypt-discovery-challenger_URL := $(call URL_TEMPLATE,kcrypt-discovery-challenger,$(KCRYPT_DISCOVERY_CHALLENGER_VERSION))
 provider-kairos_URL := $(call URL_TEMPLATE,provider-kairos,$(PROVIDER_KAIROS_VERSION))
 
